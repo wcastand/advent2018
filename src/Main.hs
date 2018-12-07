@@ -1,7 +1,7 @@
 module Main where
 
-  import D1.One
-  import D1.Two
+  import qualified D1
+  import qualified D2
 
   printMaybe m = case m of
     Nothing -> putStrLn "List was empty!"
@@ -11,7 +11,10 @@ module Main where
   main :: IO ()
   main = do
     putStr "Day 1.1 : "
-    print =<< one
+    print =<< D1.one
     putStr "Day 1.2 : "
-    res <- two
+    res <- D1.two
     printMaybe res
+    putStrLn "==============="
+    putStr "Day 2.1 : "
+    print =<< D2.one
