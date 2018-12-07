@@ -9,8 +9,8 @@ module D2Spec (spec) where
       it "7776" $ do
         res <- one
         shouldBe 7776 res
-    -- describe "Exo 2" $ do
-    --   it "655" $ do
-    --     res <- two
-    --     shouldBe (Just 655) res
+    describe "Exo 2" $ do
+      it "wlkigsqyfecjqqmnxaktdrhbz" $ do
+        res <- two
+        shouldBe "wlkigsqyfecjqqmnxaktdrhbz" res
 

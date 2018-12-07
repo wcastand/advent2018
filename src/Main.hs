@@ -18,3 +18,5 @@ module Main where
     putStrLn "==============="
     putStr "Day 2.1 : "
     print =<< D2.one
+    putStr "Day 2.2 : "
+    print =<< D2.two
